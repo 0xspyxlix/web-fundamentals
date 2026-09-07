@@ -116,3 +116,8 @@ a:focus-visible { outline: 2px solid var(--mustard); outline-offset: 2px; }
   color: #4a4e57;
   margin: 1.5rem 0;
 }
+
+.page-footer .muted {
+  color: #6b6f76;
+  font-size: 0.85rem;
+}
