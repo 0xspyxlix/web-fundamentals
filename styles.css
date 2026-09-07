@@ -1,0 +1,118 @@
+/* ---------------------------------------------
+   Course site styles
+   Palette: paper (#F7F6F2), ink (#20232B),
+            navy (#233A5E), mustard (#C08A2E)
+--------------------------------------------- */
+
+:root {
+  --paper: #F7F6F2;
+  --ink: #20232B;
+  --navy: #233A5E;
+  --mustard: #C08A2E;
+  --rule: #D8D5CB;
+  --max-width: 680px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: Georgia, "Source Serif 4", "Times New Roman", serif;
+  color: var(--navy);
+  line-height: 1.2;
+  margin-top: 1.6em;
+}
+
+h1 { font-size: 2.1rem; margin-top: 0; }
+h2 { font-size: 1.4rem; border-bottom: 1px solid var(--rule); padding-bottom: 0.3em; }
+
+a {
+  color: var(--navy);
+  text-decoration-color: var(--mustard);
+  text-decoration-thickness: 2px;
+}
+a:hover { color: var(--mustard); }
+a:focus-visible { outline: 2px solid var(--mustard); outline-offset: 2px; }
+
+.page-header, .page-footer {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1.2rem 1.5rem 0;
+}
+
+.page-footer { padding: 1rem 1.5rem 3rem; }
+
+.crumb { font-size: 0.85rem; color: #6b6f76; margin: 0; }
+.crumb a { color: #6b6f76; }
+
+.content {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0.5rem 1.5rem 2rem;
+}
+
+.hero {
+  border-bottom: 1px solid var(--rule);
+  padding: 2.5rem 0 2rem;
+}
+
+.hero .eyebrow {
+  color: var(--mustard);
+  font-size: 0.9rem;
+  margin: 0 0 0.3rem;
+}
+
+.hero h1 { margin: 0 0 0.5rem; }
+.hero p { margin: 0; color: #4a4e57; }
+
+.section-list {
+  list-style: none;
+  margin: 1.5rem 0;
+  padding: 0;
+}
+
+.section-list li {
+  border-left: 3px solid var(--rule);
+  padding: 0.6rem 0 0.6rem 1rem;
+  margin-bottom: 0.6rem;
+}
+
+.section-list a {
+  font-family: Georgia, serif;
+  font-size: 1.15rem;
+  text-decoration: none;
+}
+.section-list a:hover { text-decoration: underline; text-decoration-color: var(--mustard); }
+
+.section-list .desc {
+  display: block;
+  font-size: 0.9rem;
+  color: #6b6f76;
+  margin-top: 0.15rem;
+}
+
+.subnav {
+  display: flex;
+  gap: 1.5rem;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  list-style: none;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 0.8rem;
+}
+
+.placeholder-note {
+  background: #EFEDE4;
+  border-left: 3px solid var(--mustard);
+  padding: 0.8rem 1rem;
+  font-size: 0.9rem;
+  color: #4a4e57;
+  margin: 1.5rem 0;
+}
