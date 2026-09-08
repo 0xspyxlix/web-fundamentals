@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chapter 3 - Checkpoint 2</title>
+  <title>Chapter 1 - Checkpoint 2</title>
   <link rel="stylesheet" href="../../styles.css">
 </head>
 <body>
@@ -13,9 +13,41 @@
   </header>
 
   <main class="content">
-    <h1>Checkpoint 2</h1>
-    <p class="placeholder-note">
-      Replace this with your actual checkpoint 2 work for Chapter 3.
+    <h1>Checkpoint 1.2</h1>
+    <p>Answers from Chapter 1 of the textbook.</p>
+
+    <h2>1. Describe the components of the client/server model as applied to the Internet.</h2>
+    <p>
+      The client/server model is basically how everything works on the Web. The client is your
+      web browser - Chrome, Firefox, Safari, whatever you use. It connects to the Internet when
+      you need it and sends out requests for web pages using HTTP. The server is a computer
+      that's always connected to the Internet and runs web server software like Apache or IIS.
+      When the server gets a request from the client, it finds the right files and sends them
+      back along with a status code. So the flow is: you type a URL in your browser (client),
+      the browser sends an HTTP request to the web server, and the server sends back the HTML,
+      images, and everything else the page needs.
+    </p>
+
+    <h2>2. Identify two protocols used on the Internet to convey information that use the Internet but do not use the Web.</h2>
+    <p>
+      Two protocols that use the Internet but don't go through the Web would be FTP and email
+      protocols. FTP (File Transfer Protocol) is used to transfer files between computers on the
+      Internet - web developers use it a lot to upload their site files to a web server. Then
+      there's email, which uses SMTP (Simple Mail Transfer Protocol) to send messages and POP3
+      or IMAP to receive them. Both of these run over the Internet, but they don't involve web
+      browsers or web pages, so they're separate from the Web itself.
+    </p>
+
+    <h2>3. Explain the similarities and differences between a URL and a domain name.</h2>
+    <p>
+      A domain name and a URL are related but not the same thing. A domain name is just the
+      name that identifies a website on the Internet, like <code>google.com</code>. It maps to an
+      IP address through DNS so you don't have to memorize numbers like 74.125.95.104. A URL
+      (Uniform Resource Locator) is the full address that points to a specific page or file on
+      that website. It includes the protocol (<code>https://</code>), the domain name, and the
+      path to the file - like <code>https://www.google.com/maps/index.html</code>. So the domain
+      name is part of the URL, but the URL gives you the complete location including which
+      protocol to use and which specific file to load.
     </p>
   </main>
 
