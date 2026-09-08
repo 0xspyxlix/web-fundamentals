@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 2 - Checkpoint 2</title>
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+
+  <header class="page-header">
+    <p class="crumb"><a href="../../index.html">Home</a> / <a href="../index.html">Chapter 2</a> / Checkpoint 2</p>
+  </header>
+
+  <main class="content">
+    <h1>Chapter 2 - Checkpoint 2</h1>
+    <p>Textbook Checkpoint 2.2, covering special characters and hyperlinks.</p>
+
+    <h2>1. Describe the purpose of special characters in HTML.</h2>
+    <p>
+      Special characters, also called <strong>character entities</strong>, are codes used to display
+      characters that are either reserved in HTML or not available on a standard keyboard. Because
+      characters like <code>&lt;</code>, <code>&gt;</code>, and <code>&amp;</code> have special
+      meaning in HTML, they must be written as entity references (<code>&amp;lt;</code>,
+      <code>&amp;gt;</code>, <code>&amp;amp;</code>) when you want them to appear as visible text.
+      Entity references are also used for symbols such as the copyright sign
+      (<code>&amp;copy;</code> displays &copy;) and non-breaking spaces (<code>&amp;nbsp;</code>).
+      Every entity begins with an ampersand and ends with a semicolon.
+    </p>
+
+    <h2>2. When would you use an absolute link? Does it use the http protocol?</h2>
+    <p>
+      An <strong>absolute link</strong> (absolute URL) is used when you need to link to a resource
+      on a different website or a different web server. It includes the complete address: the
+      protocol (such as <code>https://</code>), the domain name, and the path to the specific page
+      or file. Yes, an absolute link uses the http or https protocol as part of the full URL.
+      For example: <code>https://www.w3.org/</code>.
+    </p>
+
+    <h2>3. When would you use a relative link? Does it use the http protocol?</h2>
+    <p>
+      A <strong>relative link</strong> is used when linking to another page or file within the
+      same website. It specifies the path from the current document to the target file without
+      including the protocol or domain name. No, a relative link does not use the http protocol
+      because it references files relative to the current location on the same server. For example,
+      <code>contact.html</code> or <code>../images/photo.jpg</code>.
+    </p>
+  </main>
+
+  <footer class="page-footer">
+    <p><a href="../index.html">&larr; Back to Chapter 2</a></p>
+  </footer>
+
+</body>
+</html>
