@@ -14,36 +14,35 @@
 
   <main class="content">
     <h1>Chapter 2 - Checkpoint 2</h1>
-    <p>Textbook Checkpoint 2.2, covering special characters and hyperlinks.</p>
+    <p>Answers for Checkpoint 2.2 from the textbook.</p>
 
     <h2>1. Describe the purpose of special characters in HTML.</h2>
     <p>
-      Special characters, also called <strong>character entities</strong>, are codes used to display
-      characters that are either reserved in HTML or not available on a standard keyboard. Because
-      characters like <code>&lt;</code>, <code>&gt;</code>, and <code>&amp;</code> have special
-      meaning in HTML, they must be written as entity references (<code>&amp;lt;</code>,
-      <code>&amp;gt;</code>, <code>&amp;amp;</code>) when you want them to appear as visible text.
-      Entity references are also used for symbols such as the copyright sign
-      (<code>&amp;copy;</code> displays &copy;) and non-breaking spaces (<code>&amp;nbsp;</code>).
-      Every entity begins with an ampersand and ends with a semicolon.
+      Some characters already mean something in HTML, like <code>&lt;</code> and <code>&gt;</code>
+      which the browser reads as the start and end of tags. So if you actually want to display those
+      characters on the page as text, you have to use special codes called character entities. For
+      example, <code>&amp;lt;</code> shows a less-than sign and <code>&amp;amp;</code> shows an
+      ampersand. They're also useful for symbols you can't easily type on a keyboard, like
+      <code>&amp;copy;</code> for the copyright symbol (&copy;). Every entity starts with
+      <code>&amp;</code> and ends with a semicolon.
     </p>
 
     <h2>2. When would you use an absolute link? Does it use the http protocol?</h2>
     <p>
-      An <strong>absolute link</strong> (absolute URL) is used when you need to link to a resource
-      on a different website or a different web server. It includes the complete address: the
-      protocol (such as <code>https://</code>), the domain name, and the path to the specific page
-      or file. Yes, an absolute link uses the http or https protocol as part of the full URL.
-      For example: <code>https://www.w3.org/</code>.
+      You use an absolute link when you're linking to a page on a completely different website. It
+      has the full address including the protocol, domain, and path - like
+      <code>https://www.google.com</code>. So yes, it does use http (or more commonly https these
+      days). Basically, if the page you're linking to isn't on the same server as your site, you
+      need the whole URL.
     </p>
 
     <h2>3. When would you use a relative link? Does it use the http protocol?</h2>
     <p>
-      A <strong>relative link</strong> is used when linking to another page or file within the
-      same website. It specifies the path from the current document to the target file without
-      including the protocol or domain name. No, a relative link does not use the http protocol
-      because it references files relative to the current location on the same server. For example,
-      <code>contact.html</code> or <code>../images/photo.jpg</code>.
+      A relative link is what you use when linking to another page on your own site. Instead of
+      writing out the full URL, you just write the path from where you are to where you want to
+      go. Something like <code>about.html</code> if it's in the same folder, or
+      <code>../images/pic.jpg</code> if you need to go up a folder first. It doesn't use http at
+      all since the browser already knows what server it's on - it just needs the file path.
     </p>
   </main>
 
