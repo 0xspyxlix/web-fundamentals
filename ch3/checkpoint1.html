@@ -3,45 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chapter 3 - Checkpoint 1</title>
+  <title>Travel Blog - Checkpoint 1</title>
   <link rel="stylesheet" href="checkpoint1.css">
 </head>
 <body>
 
-  <h1>Checkpoint 1: External Style Sheet</h1>
+  <header>
+    <h1>My Travel Blog</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Destinations</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <p>
-    This page is linked to an external style sheet called checkpoint1.css. All
-    the styling you see here comes from that one file. The body has a background
-    color, a text color, and a font-family set through CSS instead of using HTML
-    attributes. If I change something in the CSS file and reload this page, the
-    new styles show up automatically without touching the HTML at all.
-  </p>
+  <main>
+    <h2>Getting Started with External CSS</h2>
+    <p>
+      For this checkpoint I set up an external stylesheet and linked it to my travel
+      blog page. The stylesheet has one rule targeting the body element which controls
+      the background color, font, line height, and text color for the whole page. All
+      the styling comes from that single CSS file instead of being written inline on
+      each element.
+    </p>
 
-  <h2>Why External Style Sheets Matter</h2>
+    <h2>What the Stylesheet Does</h2>
+    <p>
+      The background is set to a light gray (#f9f9f9) which is easier on the eyes than
+      pure white. The font is Arial with sans-serif as a fallback. Line height is 1.6
+      so there is enough space between lines of text to read comfortably, and the text
+      color is a dark gray (#333333) instead of full black.
+    </p>
+    <p>
+      The nice thing about having this in an external file is that if I add more pages
+      to the blog later I can link the same stylesheet to all of them and they will look
+      consistent without me having to copy paste styles everywhere.
+    </p>
+  </main>
 
-  <p>
-    The main benefit is that you can control the look of multiple pages from a
-    single file. If this site had ten pages all linking to the same stylesheet,
-    changing the background color in one place would update all ten pages at once.
-    That saves a ton of time compared to editing inline styles on every single
-    page.
-  </p>
-
-  <h2>CSS Properties Used on This Page</h2>
-
-  <ul>
-    <li><strong>background-color</strong> sets the background of the page</li>
-    <li><strong>color</strong> sets the text color for the body</li>
-    <li><strong>font-family</strong> picks which font the browser uses</li>
-    <li><strong>font-size</strong> controls how big or small the text is</li>
-  </ul>
-
-  <p>
-    Check out the <a href="https://www.w3.org">W3C website</a> for the full CSS
-    specification. Questions? <a href="mailto:aimohamed@mail.lipscomb.edu">Email
-    me</a>.
-  </p>
+  <footer>
+    <p>&copy; 2026 My Travel Blog</p>
+  </footer>
 
 </body>
 </html>
