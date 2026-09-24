@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 3 - Checkpoint 2</title>
+  <link rel="stylesheet" href="checkpoint2.css">
+</head>
+<body>
+
+  <h1 id="page-title">Checkpoint 2: Classes, IDs, and the Cascade</h1>
+
+  <p>
+    This page builds on Checkpoint 1 by adding class and id selectors to the CSS.
+    Instead of styling every paragraph or every heading the same way, classes let
+    you target specific groups of elements and ids let you target one unique element
+    on the page.
+  </p>
+
+  <h2>Class Selectors</h2>
+
+  <p class="highlight">
+    This paragraph has a class called "highlight" applied to it. In the CSS file,
+    .highlight is styled with a different background color and a left border so it
+    stands out from the rest of the text. You can reuse the same class on as many
+    elements as you want.
+  </p>
+
+  <p>
+    This paragraph has no class, so it just uses the default body styles.
+  </p>
+
+  <p class="important">
+    This paragraph uses a class called "important" which makes the text bold and
+    changes the color. Classes are useful when you want certain content to look
+    different without creating a whole new HTML element for it.
+  </p>
+
+  <h2>ID Selectors</h2>
+
+  <p>
+    The heading at the top of this page has an id of "page-title" which gives it
+    a unique bottom border. IDs should only be used once per page since they
+    identify a single specific element. The CSS targets it with #page-title
+    instead of a dot.
+  </p>
+
+  <h2>The Cascade</h2>
+
+  <p>
+    When multiple CSS rules apply to the same element, the browser follows a
+    specific order of priority. Inline styles beat everything, then id selectors,
+    then class selectors, then element selectors. That is why an inline style
+    on an h1 tag overrides what the external stylesheet says for all h1 elements.
+  </p>
+
+  <p>
+    <a href="checkpoint1.html">Back to Checkpoint 1</a>
+  </p>
+
+</body>
+</html>
