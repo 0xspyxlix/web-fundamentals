@@ -1,0 +1,21 @@
+a {
+  text-decoration: none;
+}
+
+a:link {
+  background-color: #e8f4fd;
+  color: #1a5276;
+  padding: 4px 8px;
+}
+
+a:hover {
+  background-color: #f9e79f;
+  color: #7d6608;
+  text-decoration: underline;
+}
+
+a:visited {
+  background-color: #e8daef;
+  color: #6c3483;
+  padding: 4px 8px;
+}
