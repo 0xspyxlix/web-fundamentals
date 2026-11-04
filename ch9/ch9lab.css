@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+#inquiry,
+#request {
+  background-color: #f0f4f5;
+  padding: 15px;
+  max-width: 620px;
+  border-radius: 6px;
+}
+
+#inquiry label,
+#request label {
+  display: inline-block;
+  width: 110px;
+  margin-right: 10px;
+  text-align: right;
+  vertical-align: top;
+}
+
+#inquiry input[type="text"],
+#inquiry input[type="email"],
+#inquiry select,
+#inquiry textarea,
+#request input[type="text"],
+#request input[type="email"],
+#request input[type="url"],
+#request input[type="number"],
+#request input[type="date"] {
+  width: 280px;
+  padding: 4px;
+}
+
+#request textarea {
+  width: 320px;
+  padding: 4px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+}
+
+legend {
+  font-weight: bold;
+  padding: 0 6px;
+}
+
+fieldset label {
+  display: inline;
+  width: auto;
+  margin: 0 12px 0 4px;
+  text-align: left;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 3px solid #4a8b94;
+  background-color: #f2f9fa;
+}
+
+.buttons {
+  margin-left: 124px;
+}
+
+.buttons button {
+  background-color: #2f6b73;
+  color: #fff;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 4px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background-color: #4a8b94;
+}
